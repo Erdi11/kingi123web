@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+body {
+    font-family: Arial;
+    background: #0f0f0f;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: rgba(0,0,0,0.7);
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+}
+
+.navbar a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: gold;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: url('https://images.unsplash.com/photo-1493238792000-8113da705763') center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+    z-index: 2;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+/* FILTER */
+.filters {
+    text-align: center;
+    padding: 20px;
+}
+
+.filters input {
+    display: none;
+}
+
+.filters label {
+    padding: 10px 15px;
+    background: #222;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.filters label:hover {
+    background: gold;
+    color: black;
+}
+
+/* CARS */
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    padding: 40px;
+    gap: 20px;
+}
+
+.car-card {
+    background: #1a1a1a;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.car-card img {
+    width: 100%;
+}
+
+.car-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(255,215,0,0.3);
+}
+
+/* FILTER LOGIC */
+#audi-btn:checked ~ .cars .bmw {
+    display: none;
+}
+
+#bmw-btn:checked ~ .cars .audi {
+    display: none;
+}
+
+/* DETAIL PAGE */
+.car-detail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: none;
+    padding: 50px;
+}
+
+.car-detail:target {
+    display: block;
+}
+
+.close {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+/* DETAIL LAYOUT */
+.detail-container {
+    display: flex;
+    gap: 40px;
+}
+
+/* SLIDER */
+.slider {
+    width: 60%;
+}
+
+.slides img {
+    width: 100%;
+    display: none;
+}
+
+#s1:checked ~ .slides img:nth-child(1),
+#s2:checked ~ .slides img:nth-child(2),
+#s3:checked ~ .slides img:nth-child(3) {
+    display: block;
+}
+
+.arrows label {
+    background: gold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* INFO */
+.info {
+    width: 40%;
+}
+
+.contact {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+}

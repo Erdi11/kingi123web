@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AutoLuani</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">🦁 AutoLuani</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#cars">Cars</a>
+        <a href="#audi">Audi</a>
+        <a href="bmw">BMW</a>
+        <a href="Mercedes-Benz">Mercedes Benz</a>
+        <a href="Porsche">Porsche</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1>Drive Your Dream Car</h1>
+        <p>Luxury • Performance • Style</p>
+    </div>
+</section>
+
+<!-- FILTER -->
+<section class="filters">
+
+    <input type="radio" name="brand" id="all" checked>
+    <label for="all">All</label>
+
+    <input type="radio" name="brand" id="audi-btn">
+    <label for="audi-btn">Audi</label>
+
+    <input type="radio" name="brand" id="bmw-btn">
+    <label for="bmw-btn">BMW</label>
+   
+    <input type="radio" name="brand" id="bmw-btn">
+    <label for="bmw-btn">Mercedes-Benz</label>
+
+    <input type="radio" name="brand" id="bmw-btn">
+    <label for="bmw-btn">Porsche</label>
+</section>
+
+<!-- CARS -->
+<section class="cars" id="cars">
+
+<div class="car-grid">
+
+    <!-- AUDI -->
+    <a href="#audi1" class="car-card audi">
+        <img src="A6 Avant 2026.jpg">
+        <h3>Audi A6 2026</h3>
+    </a>
+
+    <!-- BMW -->
+    <div class="car-card bmw">
+        <img src="M5 Comp 2023.jpg">
+        <h3>BMW M5 Comp 2023</h3>
+    </div>
+
+    <div class="car-card Mercedes-Benz">
+        <img src="Mercedes C class w206.jpg">
+        <h3>Mercedes-Benz C63 w206</h3>
+    </div>
+
+    <div class="car-card Porsche">
+        <img src="Porsche 911.jpg">
+        <h3>Porsche</h3>
+    </div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- AUDI DETAIL PAGE -->
+<!-- ========================= -->
+
+<section id="audi1" class="car-detail">
+
+<a href="#" class="close">✖</a>
+
+<div class="detail-container">
+
+    <!-- SLIDER -->
+    <div class="slider">
+
+        <input type="radio" name="slide" id="s1" checked>
+        <input type="radio" name="slide" id="s2">
+        <input type="radio" name="slide" id="s3">
+
+        <div class="slides">
+            <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6">
+            <img src="https://images.unsplash.com/photo-1549924231-f129b911e442">
+            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d">
+        </div>
+
+        <div class="arrows">
+            <label for="s1">◀</label>
+            <label for="s2">●</label>
+            <label for="s3">▶</label>
+        </div>
+
+    </div>
+
+    <!-- INFO -->
+    <div class="info">
+        <h2>Audi A4 2023</h2>
+
+        <p>
+        Full option, automatic, leather interior, panoramic roof,
+        sensors, camera. Imported and in perfect condition.
+        </p>
+
+        <h3>€35,000</h3>
+
+        <p class="contact">📞 +383 44 123 456</p>
+    </div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 AutoLuani • Premium Auto Salon</p>
+</footer>
+
+</body>
+</html>
